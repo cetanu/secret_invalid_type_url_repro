@@ -1,0 +1,18 @@
+version: '2.3'
+
+services:
+  envoy:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 9901:9901
+      - 443:443
+      - 80:80
+    expose:
+      - 9901
+      - 443
+      - 80
+    environment:
+      ENVOY_UID: '0'

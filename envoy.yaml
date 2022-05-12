@@ -1,0 +1,9 @@
+node:
+  id: example
+  cluster: example
+
+dynamic_resources:
+  lds_config:
+    path: /opt/resources/listeners.json
+  cds_config:
+    path: /opt/resources/clusters.json

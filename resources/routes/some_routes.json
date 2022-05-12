@@ -1,0 +1,1 @@
+{"resources":[{"name":"some_routes","virtual_hosts":[{"name":"healthcheck","domains":["*"],"routes":[{"match":{"prefix":"/"},"route":{"cluster":"internal-health"}}],"request_headers_to_add":[{"header":{"key":"x-envoy-provide-health","value":"yes"}}]}],"@type":"type.googleapis.com/envoy.config.route.v3.RouteConfiguration"}],"version_info":"2396418665"}
